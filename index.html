@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solucion de problemas</title>
+    
+</head>
+<body>
+    <h1>suma de dos variables</h1>
+
+    <p>realizar un software web que capture 2 valores enteros, sumarlos y mostrar el resultado</p>
+    <p>los valores de entrada son: 2 variables a y b, con valores enteros</p>
+    <p>los valores de salida sera un entero</p>
+    <p>sumar los valores de a y b enviarlo en la variable del resultado</p>
+    <LABel for="a">INGRESE EL PRIMER NUMERO</LABel>
+    <INPUT type="NUMBER" id="a" name="a"><BR>
+    <LABel for="b">INGRESE EL SEGUNDO NUMERO</LABel>
+    <INPUT type="NUMBER" id="b" name="b"><BR>
+
+    <BUtton onclick="sumar">SUMAR</BUtton> <BR>
+
+    <LABel for="A">ESTE ES EL RESULTADO</LABel>
+    <INPUT type="NUMBER" id="RESULTADO" name="RESULTADO"><BR>
+
+    <script>
+         function sumar() {
+            var a = document.getElementById("a").value;
+         var b = document.getElementById("b").value;
+         var resultado;
+
+         a = parseInt(a);
+         b = parseInt(b);
+
+         resultado = a + b;
+
+         document.getElementById("resultado").value = resultado
+          
+         } 
+         
+            
+    </script>
+</body>
+
+</html>
